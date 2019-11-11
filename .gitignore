@@ -1,4 +1,4 @@
-#忽略IDEA编译后的out目录
+﻿#忽略IDEA编译后的out目录
 out/
 
 # Compiled class file
