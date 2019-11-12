@@ -3,9 +3,21 @@ package testFile;
 import java.io.File;
 
 public class Test3 {
+    private static int num = 100;
     public static void main(String[] args) {
         //removeFile("E:\\wx\\1.txt");
-        removeDir("E:/test");
+        //removeDir("E:/test");
+
+        long b1 = System.currentTimeMillis();
+        sum(1);
+        long e1 = System.currentTimeMillis();
+        System.out.println(sum);
+
+        long b2 = System.currentTimeMillis();
+        int recursive = recursive(num);
+        System.out.println(recursive);
+        long e2 = System.currentTimeMillis();
+        System.out.println((e1 - b1) - (e2 - b2) );
     }
 
     private static void removeFile(String path){
@@ -65,4 +77,18 @@ public class Test3 {
     }
 
     //使用递归的方式，计算1-100累加求和
+    private static int sum = 0;
+    private static void sum(int start){
+        if (start <= num) {
+            sum = sum + start++;
+            sum(start);
+        }
+    }
+
+    private static int recursive(int max){
+        if (max > 1) {
+            return max + recursive(max - 1);
+        }
+        return 1;
+    }
 }
