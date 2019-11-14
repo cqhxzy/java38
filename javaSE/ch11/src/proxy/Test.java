@@ -15,6 +15,7 @@ public class Test {
             System.out.println(declaredMethod.getName());
         }*/
 
+        //动态产生的一个经纪人
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();//得到system classLoader
         Class<?>[] interfaces = SuperStar.class.getInterfaces();//得到明星相同的接口
         //InvocationHandler接口中只有一个方法，invoke
