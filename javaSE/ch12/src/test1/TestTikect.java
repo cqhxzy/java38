@@ -11,16 +11,16 @@ public class TestTikect {
     public static void main(String[] args) {
 
         //开启一个子线程，模拟售票点
-        Thread thread1 = new Thread(new Ticket());
+        Thread thread1 = new Thread(new Ticket());//线程进入创建状态
         Thread thread2 = new Thread(new Ticket());
         Thread thread3 = new Thread(new Ticket());
         Thread thread4 = new Thread(new Ticket());
 
         //开启线程
-        thread1.start();
-        thread2.start();
-        thread3.start();
-        thread4.start();
+        thread1.start(); //就绪状态，可运行状态
+        thread2.start(); //就绪状态，可运行状态
+        thread3.start(); //就绪状态，可运行状态
+        thread4.start(); //就绪状态，可运行状态
 
     }
 
@@ -41,6 +41,7 @@ public class TestTikect {
                         ticket--;
                         //安全舱门已打开
                     }
+
                 }
                 try {
                     Thread.sleep(1000);
