@@ -5,6 +5,8 @@ public class TestTikect {
     //在main方法中开启的线程称为main方法的子线程
     //所有的子线程执行完毕后，主线程执行完毕
     static int ticket = 20; //总共有20张票
+    static Object object = new Object();
+
     public static void main(String[] args) {
 
         //开启一个子线程，模拟售票点
@@ -28,13 +30,20 @@ public class TestTikect {
         @Override
         public void run() {
             while (ticket > 0) {
-                String name = Thread.currentThread().getName();
-                System.out.println(name + "卖出了第" + ticket + " 张票");
-                ticket--;
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+
+                /////////////
+
+                synchronized (object) { //同步代码块。
+                    //安全舱门已上锁
+                    String name = Thread.currentThread().getName();
+                    System.out.println(name + "卖出了第" + ticket + " 张票");
+                    ticket--;
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    //安全舱门已打开
                 }
             }
         }
