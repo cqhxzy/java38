@@ -32,18 +32,19 @@ public class TestTikect {
             while (ticket > 0) {
 
                 /////////////
-
                 synchronized (object) { //同步代码块。
                     //安全舱门已上锁
-                    String name = Thread.currentThread().getName();
-                    System.out.println(name + "卖出了第" + ticket + " 张票");
-                    ticket--;
-                    try {
-                        Thread.sleep(10);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+                    if (ticket > 0) {
+                        String name = Thread.currentThread().getName();
+                        System.out.println(name + "卖出了第" + ticket + " 张票");
+                        ticket--;
+                        //安全舱门已打开
                     }
-                    //安全舱门已打开
+                }
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         }
