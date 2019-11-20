@@ -5,6 +5,7 @@ public class TestTikect {
     //在main方法中开启的线程称为main方法的子线程
     //所有的子线程执行完毕后，主线程执行完毕
     static int ticket = 20; //总共有20张票
+    //4个线程使用了同一个锁
     static Object object = new Object();
 
     public static void main(String[] args) {
