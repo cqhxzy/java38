@@ -12,7 +12,7 @@ public class Repo {
      */
     public synchronized void produce(){
         String name = Thread.currentThread().getName();
-        if (this.size > CAPACITY){ //库存超出了仓库上限
+        while (this.size >= CAPACITY){ //库存超出了仓库上限
             try {
                 System.out.println("----当前库存" + this.size + "，超出仓库上限，" + name + "等待消费者消费------");
                 wait(); //等待消费者消费
@@ -25,12 +25,13 @@ public class Repo {
         int ran = (int)(Math.random() * (CAPACITY - size)) + 1;
         this.size = this.size + ran;
         System.out.println(name + "生产了" + ran + "个产品，库存：《" + this.size + "》");
+
         notifyAll(); //唤醒其他等待的线程
     }
 
     public synchronized void sell(){
         String name = Thread.currentThread().getName();
-        if (this.size <= 0) {//没有库存
+        while (this.size <= 0) {//没有库存
             System.out.println("----当前库存" + this.size + "，不足消费" + name + "等待生产------");
             try {
                 wait();
