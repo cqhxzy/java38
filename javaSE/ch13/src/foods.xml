@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <foods>
+        <food>
+            <name>牛肉干</name>
+            <count>10</count>
+            <price>10.5</price>
+        </food>
+        <food>
+            <name>豆腐干</name>
+            <count>10</count>
+            <price>10.5</price>
+        </food>
+        <food>
+        <name>果冻</name>
+        <count>10</count>
+        <price>10.5</price>
+    </food>
+
+    </foods>
+
+</root>
