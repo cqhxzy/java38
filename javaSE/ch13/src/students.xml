@@ -9,5 +9,12 @@
       <phone>1111111</phone>
       <email>1111111@163.com</email>
     </student>
+    <student role="lisi">
+      <name>李四</name>
+      <age>16</age>
+      <sex>男</sex>
+      <phone>2222222</phone>
+      <email>2222222@163.com</email>
+    </student>
   </students>
 </root>
