@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    这是XML中的注释
+    和HTML相同，任何一个xml文档必须包含一个根节点
+
+-->
+<root>
+    <students>  <!--用于保存多个学生的信息-->
+        <student role="1">
+            <name>张三</name>
+            <age>18</age>
+            <sex>男</sex>
+            <phone>123456</phone>
+            <email>123456@qq.com</email>
+        </student>
+        <student role="2">
+            <name>李四</name>
+            <age>16</age>
+            <sex>女</sex>
+            <phone>654321</phone>
+            <email>654321@qq.com</email>
+        </student>
+    </students>
+    <books>
+        <book>
+            <name>钢铁是怎样炼成的</name>
+            <price>25</price>
+        </book>
+    </books>
+</root>
