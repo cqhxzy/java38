@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <students>
+    <student role="admin">
+      <name>张三</name>
+      <age>18</age>
+      <sex>女</sex>
+      <phone>1111111</phone>
+      <email>1111111@163.com</email>
+    </student>
+  </students>
+</root>
