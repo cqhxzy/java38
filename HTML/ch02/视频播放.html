@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <video autoplay muted controls width="800">
+        <source src="media/1.webm" type="video/webm" />
+        <source src="media/2.mp4" type="video/mp4" />
+        您的浏览器版本过低，请升级到最新版本获取更好的体验。
+    </video> -->
+    <div>
+        <button id="btn" onclick="fn_click()">播放视频</button>
+    </div>
+    <div id="container" style="display: none"><!--隐藏-->
+        <video preload="auto" playsinline controls autoplay >
+            <source src="media/cinematic_trailer_onion_site_zhCN.mp4" type="video/mp4" />
+        </video>
+    </div>
+    
+    <script>
+
+        function fn_click(){
+
+            let video = document.querySelector('video');//获取视频标签对象
+            let container = document.querySelector('#container');//获取容器对象
+            container.style.display="block";//使容器显示
+            if(video.paused){
+                video.play(); //播放视频
+            } else {
+                video.pause(); //暂停视频
+            }
+            
+        }
+
+        
+    </script>
+</body>
+</html>
