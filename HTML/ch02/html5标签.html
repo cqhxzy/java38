@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--
+        使IE9以下的浏览器能够识别html5标签。
+        IE9以下的浏览器不支持html5标签，因此导致html5中的css样式不能正常显示
+    -->
+    <script src="html5.js"></script>
+    <!--
+        使IE9以下的浏览器支持css3中的媒体查询
+    -->
+    <script src="respond.js"></script>
+    <style>
+        header,div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>div标签的内容</div>
+    <header>网页的头</header>
+    <section>网页中某个逻辑区域</section>
+    <article>某个文章</article>
+    <nav>导航</nav>
+    <footer>网页的底部</footer>
+</body>
+</html>
