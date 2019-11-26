@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      input[disabled]:hover,
+      input[readonly]:hover {
+        cursor: not-allowed; /*不被允许*/
+      }
+    </style>
+  </head>
+  <body>
+    <!--form表单的开始-->
+    <form action="#" method="POST">
+      <div>
+        <!--
+                name:给表单元素起一个名字，可以重复
+                id：一个页面的id是唯一的。
+            -->
+        <label for="userName">用户名：</label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          pattern="[a-z][a-z0-9_]{5,10}"
+          required
+          placeholder="请输入用户名"
+        />
+      </div>
+      <div>
+        <label for="userPwd">密码：</label>
+        <input
+          type="password"
+          name="userPwd"
+          id="userPwd"
+          required
+          placeholder="请输入密码"
+        />
+      </div>
+      <div>
+        <label>性别：</label>
+        <label> <input type="radio" name="gender" value="男" />男 </label>
+        <label>
+          <input type="radio" name="gender" checked value="女" />女
+        </label>
+      </div>
+      <div>
+        <label>专业：</label>
+        <label> <input type="checkbox" name="zy" value="1" />java </label>
+        <label> <input type="checkbox" name="zy" value="2" />html </label>
+        <label>
+          <input type="checkbox" name="zy" checked value="3" />javaScript
+        </label>
+      </div>
+      <div>
+        <label> 头像：<input type="file" name="f" id="f" /> </label>
+      </div>
+      <div>
+        <label for=""
+          >隐藏域：<input type="hidden" name="h" value="4564fdsfd45"
+        /></label>
+      </div>
+      <div>
+        <label for="">
+          年份：
+          <select name="bd" id="bd">
+            <option value="2000">2000</option>
+            <option value="2001" selected>2001</option>
+            <option value="2002">2002</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label for="">个人简介</label>
+        <textarea name="" id="" cols="30" rows="10">
+                大家好，我叫XXX，我来自重庆市渝中区两路口；我正在华信智原学习java软件工程师。
+            </textarea
+        >
+      </div>
+      <div>
+        <label for="">只读:</label>
+        <input type="text" value="1234" readonly />
+      </div>
+      <div>
+        <label for="">禁用:</label>
+        <input type="text" value="1234" disabled />
+      </div>
+      <div>
+        <input type="button" value="点我" />
+        <input type="submit" value="提交" />
+        <input type="reset" value="重置" />
+      </div>
+    </form>
+    <!--form表单的结尾-->
+  </body>
+</html>
