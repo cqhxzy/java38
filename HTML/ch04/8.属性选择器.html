@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div[myattr]{ /*使用了attr属性的div标签设置样式*/
+            color: red;
+        }
+
+        /*
+            利用属性选择器为所有的文本框和密码框设置样式
+            input[type='text'],input[type='password']{
+
+            }
+        */
+        div[myattr="aaa"]{
+            color: saddlebrown;
+        }
+
+        div[myattr^='b']{
+            color: blue;
+        }
+        div[myattr$='d']{
+            color: violet;
+        }
+        div[myattr*='abc']{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div>div1</div>
+    <div myattr="aaa">div2</div>
+    <div myattr='bbb'>div3</div>
+    <div myattr='bbbd'>div4</div>
+    <div myattr='abcabc'>div5</div>
+</body>
+</html>
