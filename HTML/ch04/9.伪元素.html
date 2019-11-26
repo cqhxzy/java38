@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*把伪元素当做标签使用就可以了*/
+        .book::before{
+            content: "《";
+            color: crimson;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .book::after{
+            content: '》';
+            color: darkgreen;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="book">java编程思想</p>
+</body>
+</html>
