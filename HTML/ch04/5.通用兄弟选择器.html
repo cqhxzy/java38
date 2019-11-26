@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .p1 ~ p{ /*匹配.p1同级别之后的所有的p标签*/
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul>
+        <li>
+            <p>p4</p>
+        </li>
+        <li>
+            <p>p5</p>
+        </li>
+        <li>
+            <p>p6</p>
+        </li>
+    </ul>
+</body>
+</html>
