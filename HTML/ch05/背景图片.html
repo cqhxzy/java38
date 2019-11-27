@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        div:first-of-type{
+            background-image: url(image/icon.gif);
+            background-repeat: no-repeat;
+            background-color: burlywood;
+
+            /*
+            background-position:center;  x轴和y轴居中
+            background-position:50%;  和center等价
+
+            background-position:center right; x轴居中，y轴靠右
+            background-position:100px  50px; x轴100px的位置，y轴50px的位置
+            */
+            background-position:center;
+            background-size: contain;
+        }
+
+        div:nth-of-type(2){
+            /*背景图片缩写形式*/
+            background: cadetblue url(image/icon.gif) no-repeat center;
+        }
+        div:nth-of-type(3){
+            width: 300px;
+            height: 100px;
+            background-color: #ccc;
+            /*注意背景图片的宽高比例和div标签的宽高比例*/
+            background-image: url(image/background.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
