@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: left;
+            width: 200px;
+            text-indent: 32px;
+            line-height: 30px; /*行高*/
+        }
+
+        p > span:first-of-type{
+            text-decoration: overline; /*上横线*/
+        }
+        p>span:nth-of-type(2){
+            text-decoration: underline; /*下划线*/
+        }
+        p>span:last-of-type{
+            text-decoration: line-through;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #d1{
+            background: #ccc;
+            height: 50px;
+            text-shadow: 1px 1px 1px brown;
+        }
+        #d1 img{
+            vertical-align: middle;
+        }
+
+        /*伪类样式，鼠标悬浮在a标签上时触发的样式*/
+        a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span>hello world</span> 
+        你好，我在<span>重庆华信智原</span>学习html前端课程。
+        我们已经学习了的课程为<span>java</span>
+        <a href="#">华信智原</a>
+    </p>
+
+    <div id="d1">
+        <img src="image/icon.gif" height="100%"> 重庆华信智原
+    </div>
+</body>
+</html>
