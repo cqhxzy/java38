@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: rebeccapurple;
+
+            /* border-width: 5px;
+            border-style: solid;
+            border-color: red; */
+
+            border: 5px dashed red;
+        }
+
+        div.arrow{
+            width: 0px;
+            height: 0px;
+            background: transparent;
+            border-left-width: 7px;
+            border-right-width: 7px;
+            border-top-width: 10px;
+            border-bottom-width: 10px;
+            border-color: transparent;/*透明色*/
+            border-style: solid;
+            border-bottom-color: #000; /*底部边框的颜色*/
+        }
+
+        div.arrow:hover{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <!--利用边框实现三角形-->
+    <div class="arrow"></div>
+</body>
+</html>
