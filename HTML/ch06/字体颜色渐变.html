@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            /*
+                -ms-:IE浏览器前缀
+                -moz-:火狐浏览器前缀
+                -o-: 欧朋浏览器前缀
+                -weikit-: 谷歌浏览器和苹果浏览器前缀
+            */
+            
+            color: red;
+
+            /*在谷歌浏览器以及苹果浏览器中增加了字体颜色渐变色的特效*/
+            -webkit-text-fill-color:transparent;
+            /*背景颜色作用范围*/
+            -webkit-background-clip:text;/*仅对文本设置背景色*/
+            background: -webkit-linear-gradient(top,rgba(197, 6, 6, 0.788),rgba(117, 19, 19, 0.897),#000);
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        你好，我们今天学习css3样式！
+    </div>
+</body>
+</html>
