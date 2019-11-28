@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        div:first-of-type{
+            background: mediumaquamarine;
+            box-shadow: 1px 0px 10px 1px #000;
+        }
+        div:nth-of-type(2){
+            background: mediumpurple;
+            box-shadow: 1px 0px 10px 1px #000 inset;/*内置阴影*/
+        }
+        div:nth-of-type(3){
+            background: navajowhite;
+            box-shadow: 1px 0px 5px 1px #000,1px 0px 5px rgb(11, 131, 161);/*内置阴影*/
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

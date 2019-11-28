@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav{
+            
+        }
+
+        div{
+            /* width: 100px; */
+            /* height: 50px; */
+            margin: 5px 5px;
+        }
+
+        .nav div:nth-of-type(1){
+            background-color: brown;
+            float: left;
+        }
+        .nav div:nth-of-type(2){
+            background-color: cadetblue;
+            float: left;
+        }
+        .nav div:nth-of-type(3){
+            background-color: cornflowerblue;
+            float: right;
+        }
+        div.main{
+            width: 100%;
+            height: 100px;
+            background-color: darkgray;
+        }
+
+        .clearfix{
+            /*低版本的IE浏览器*/
+            zoom: 1;
+        }
+        .clearfix::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav clearfix">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </nav>
+    <!-- <div class="clearfix"></div> -->
+    <div class="main"></div>
+</body>
+</html>
