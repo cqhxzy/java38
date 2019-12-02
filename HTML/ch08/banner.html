@@ -44,6 +44,10 @@
             color: cornsilk;
             position: relative;
             z-index: 10;
+            transition: all 0.5s;
+        }
+        li a::before,li a::after{
+            transition: all 0.5s;
         }
         li:hover a{
             /*
@@ -69,7 +73,8 @@
         li:hover a::after{
             width: 16px;
             height: 16px;
-            background-color: #000;
+            background-color: rgba(94, 91, 91, 0.89);
+            opacity: 0.5;
             z-index: 5;
             left: -0.5px;
             top: -0.5px;
