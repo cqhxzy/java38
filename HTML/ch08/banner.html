@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .banner{
+            width: 426px;
+            height: 130px;
+            margin: 0 auto;
+            background: transparent url(img/adver-01.jpg) no-repeat 0 0;
+            background-size: cover;
+            position: relative;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .banner ul li{
+            float: left;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .banner ul li a{
+            font-size: 12px;
+            width: 15px;
+            line-height: 15px;
+            display: block;
+            text-align: center;
+            background: cornflowerblue;
+            margin-left: 10px;
+            border-radius: 100%;
+            color: cornsilk;
+            position: relative;
+            z-index: 10;
+            transition: all 0.5s;
+        }
+        li a::before,li a::after{
+            transition: all 0.5s;
+        }
+        li:hover a{
+            /*
+            !important 使样式强制生效，其优先级比行内样式还要高
+            */
+            background: transparent !important;
+        }
+        li:hover a::before,li:hover a::after{
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+        }
+        li:hover a::before{
+            width: 10px;
+            height: 10px; 
+            z-index: 6;
+            background-color: #fff;
+            left: 2.5px;
+            top: 2.5px;
+        } 
+
+        li:hover a::after{
+            width: 16px;
+            height: 16px;
+            background-color: rgba(94, 91, 91, 0.89);
+            opacity: 0.5;
+            z-index: 5;
+            left: -0.5px;
+            top: -0.5px;
+        }
+
+        .clearfix{
+            zoom: 1;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        ul.nav{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <ul class="nav clearfix">
+                <li class="active">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
