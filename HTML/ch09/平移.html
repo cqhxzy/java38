@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .div{
+            width: 500px;
+            height: 50px;
+            background-color: cadetblue;
+            position: relative;
+        }
+
+        .div span{
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: crimson;
+            right: 0;
+            bottom: 0;
+            /*
+            过渡属性 过渡时间 过渡曲线函数（贝塞尔曲线） 过渡延迟时间
+            transition:transition-property transition-duration transition-timing-function transition-delay;
+            
+            
+            CSS3默认的过渡曲线：
+                linear:匀速执行
+                ease: 先慢，后快，再慢
+                ease-in:慢速开始
+                ease-out:慢速结束
+                ease-in-out: 慢速开始，慢速结束
+            
+            在线贝塞尔曲线生成器：https://cubic-bezier.com/
+            */
+            transition: transform 1s cubic-bezier(.05,1.41,.23,-0.16) 1s;
+        }
+
+        .x:hover span{
+            transform: translateX(-400px);
+            /*transform: translate(-50px,0px);*/
+        }
+
+        .y:hover span{
+            transform: translateY(-10px)
+            /*transform: translate(0px,-10px);*/
+        }
+    </style>
+</head>
+<body>
+    <h1>X轴平移</h1>
+    <div class="div x">
+        <span></span>
+    </div>
+    <h1>Y轴平移</h1>
+    <div class="div y">
+        <span></span>
+    </div>
+</body>
+</html>
