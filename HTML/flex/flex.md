@@ -132,6 +132,8 @@ align-items属性定义项目在交叉轴上如何对齐。
 
 align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
 
+***如果只有一根轴线时，设置`align-items`，如果有多根轴线时，设置`align-content`***
+
 ```css
 .box{
     align-content:flex-start | flex-end | center | spance-between | space-around |stretch;
