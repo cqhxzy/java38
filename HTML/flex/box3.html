@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: inherit;/*继承自父级容器*/
+            background-color: darkseagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #2b2b2b;
+            border-radius: 100%;
+            box-shadow: 0px 1px 1px 1px #000 inset,0px 1px 1px 0px #2b2b2b;
+        }
+
+        .box > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box>div:nth-of-type(2){
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            /*弹性布局的父容器。一个盒子*/
+            display: flex;
+
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: cadetblue;
+
+            /*-------------flex-direction----------------*/
+
+            /*主轴默认在水平方向，垂直方向是交叉轴*/
+            /* flex-direction: row; */
+
+            /*主轴在垂直方向，水平方向称为交叉轴*/
+            /* flex-direction: column; */
+
+            /*反转主轴起点排列方向*/
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+
+            /******************flex-wrap**********************/
+            /*设置flex项目超出容器后的换行方式，默认为不换行*/
+            /* flex-wrap: nowrap; */
+
+            /*换行显示*/
+            /* flex-wrap: wrap; */
+
+            /* flex-wrap: wrap-reverse; */
+
+
+            /******************flex-flow*********************/
+            /*flex-direction和flex-wrap的缩写*/
+            flex-flow: row wrap;
+
+
+            /*******************justify-content**************************/
+            justify-content: center;
+
+            /*******************align-items*****************************/
+            align-items: center;
+
+            /*******************align-content************************/
+            align-content: stretch;
+
+        }
+
+        .box div{
+            width: 250px;
+            height: 150px;
+        }
+
+        .box div:nth-of-type(1){
+            background-color: chocolate;
+            font-size: 20px;
+        }
+
+        .box div:nth-of-type(2){
+            background-color: cornflowerblue;
+            font-size: 50px;
+        }
+
+        .box div:nth-of-type(3){
+            background-color: crimson;
+            font-size: 40px;
+        }
+
+        .box div:nth-of-type(4){
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!--弹性布局的子项目-->
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+        <div>div4</div>
+    </div>
+</body>
+</html>
