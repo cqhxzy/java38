@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x,y,z = 10;
+        var a = {};  //js中声明对象的方式
+        var str1 = '';
+        var str2 = "";
+        var flag = false;
+        var num1 = "12345";
+        var num2 = "123.456";
+        num1 = parseInt(num1);  //类型发生改变
+        num2 = Number.parseFloat(num2);
+
+        document.write("x的类型：" + typeof(x) + "<br />");
+        document.write("y的类型：" + typeof(y) + "<br />");
+        document.write("z的类型：" + typeof(z) + "<br />");
+        document.write("a的类型：" + typeof(a) + "<br />");
+        document.write("str1的类型：" + typeof(str1) + "<br />");
+        document.write("str2的类型：" + typeof(str2) + "<br />");
+        document.write("flag的类型：" + typeof(flag) + "<br />");
+        document.write("num1的类型：" + typeof(num1) + "<br />");
+        document.write("num2的类型：" + typeof(num2) + "<br />");
+        document.write("NAN：" + parseInt("*&^*&"));
+
+        
+    </script>
+</body>
+</html>

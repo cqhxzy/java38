@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+        }
+
+        function Student(){
+
+        }
+
+        //Student.prototype.name = "";
+
+        // var stu1 = new Student();
+        // stu1.name = "张三";
+        // console.log(stu1);
+        // //通过Object.create()创建新的对象，新的对象的原型为stu1
+        // var stu2 = Object.create(stu1);
+        // console.log(stu2.name);
+
+        console.log(Person.prototype);
+
+        /*模拟继承*/
+        var p = new Person("张三",18);
+        var stu = Object.create(p);
+
+        console.log(stu.name);
+        console.log(stu.age);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

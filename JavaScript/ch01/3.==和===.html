@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        var num1 = 123;  //number
+        var str = "123"; //string
+
+        //js用==在比较值钱会先做一次类型的转换
+        var result1 = num1 == str;
+
+        //首先比较类型是否相同，若类型不同，则直接返回false
+        var result2 = num1 === str;
+
+        document.write("num1 == str:&nbsp;&nbsp;&nbsp;" + result1);
+        document.write("<br />");
+        document.write("num1 === str:&nbsp;&nbsp;&nbsp;" + result2);
+    
+    </script>
+</body>
+</html>
