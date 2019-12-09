@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            {
+                属性1：值,
+                属性n: 值
+            }
+
+            function 函数名(参数1，参数2...){
+                [return 值;]
+            }
+
+            //匿名函数
+            function(形参列表){
+                
+                [return]
+            }
+        */
+        var obj = {
+            name:"zhangsan",
+            age:18,
+            sex:'男',
+            /*声明了匿名方法*/
+            print:function(){
+                //有的时候this是当前的对象，有的时候this是window对象
+                var str = "name=" + this.name + ",age="+this.age + ",sex="+this.sex
+                return str;
+            }
+        };
+        
+        console.log(obj);
+        console.log();
+        console.log(obj.name);//输出name属性
+        console.log(obj.age);
+        console.log(obj["sex"]); //同样也是获取对象属性的方式
+
+        console.log(obj.print());
+    </script>
+</body>
+</html>
