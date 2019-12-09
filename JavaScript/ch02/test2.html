@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Student(){
+            this.x = 1;//声明了一个属性x值为1
+        }
+
+        var student = new Student();
+        
+        // console.log(student);
+        // console.log(student.__proto__); //得到student对象的原型
+        console.log(Student.prototype); //直接根据类获取原型
+
+        //在Student的原型之上添加属性
+        Student.prototype.name = "张三";
+        student.__proto__.age = 18;
+
+        console.log(student);
+
+        var stu = new Student();
+        stu.prop ="test"; //在stu对象之上添加属性
+        console.log(stu.valueOf());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function init() {
+            var name = "Mozilla"; // name 是一个被 init 创建的局部变量
+            function displayName() { // displayName() 是内部函数,一个闭包
+                alert(name); // 使用了父函数中声明的变量
+            }
+            displayName();
+        }
+
+        //init();
+
+        function makeFunc(){
+            var name = "Mozilla"; // name 是一个被 init 创建的局部变量
+            /*function displayName() { // displayName() 是内部函数,一个闭包
+                alert(name); // 使用了父函数中声明的变量
+            }
+            return displayName;*/
+
+            return function(){
+                alert(name);
+            }
+        }
+        var myFunc = makeFunc();//接收到的是一个匿名函数
+        //myFunc(); //闭包
+
+        var i = 10086
+
+        //声明了一个计数器
+        function counter(){
+            var i = 0; //局部变量，不会干扰全局的同名变量i
+            return function(){
+                return ++i; //多次调用闭包，共享同一个词法空间
+            }
+        }
+
+        var inner = counter(); //i:1
+        inner(); // i:1
+        
+        inner(); // i:2
+
+        var inner_i = inner(); // i:3
+
+        console.log(i);
+        console.log(inner_i);
+    </script>
+
+    <style>
+        body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        }
+
+        h1 {
+        font-size: 1.5em;
+        }
+
+        h2 {
+        font-size: 1.2em;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <p>Some paragraph text</p>
+    <h1>some heading 1 text</h1>
+    <h2>some heading 2 text</h2>
+    <a href="#" id="size-12">12</a><br />
+    <a href="#" id="size-14">14</a><br />
+    <a href="#" id="size-16">16</a> <br />
+</body>
+<script>
+    function makeSizer(size) {
+        return function() {
+            console.log("==========size:" + size);
+            document.body.style.fontSize = size + 'px';
+        };
+    }
+
+    var size12 = makeSizer(12); //在内存中存在单独的一个makeSizer, 0x001
+    var size14 = makeSizer(14); //0x002
+    var size16 = makeSizer(16); //0x003
+
+    document.getElementById('size-12').onclick = size12;
+    document.getElementById('size-14').onclick = size14;
+    document.getElementById('size-16').onclick = size16;
+</script>
+</html>
