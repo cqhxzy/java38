@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock"></div>
+    <script>
+        (function(){
+            var weeks = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+            setInterval(function(){
+                showTime();
+            },1000)
+
+            var showTime = function (){
+                //获取当前时间
+                var date = new Date();
+
+                var year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                var d = date.getDate();
+                var hour = date.getHours();
+                var min = date.getMinutes();
+                var seconds = date.getSeconds();
+
+                var week = weeks[date.getDay()];
+
+                var str = year + '-' + month + '-' + d + '&nbsp;'+hour + ':'+min+':'+seconds + "&nbsp;&nbsp;" + week;
+
+                document.querySelector("#clock").innerHTML = str;
+            }
+
+            showTime();
+        })();//立即执行函数
+    </script>
+</body>
+</html>

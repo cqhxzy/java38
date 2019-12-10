@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function test(){
+        alert("时间到");
+    }
+    //setTimeout("test()",2000);
+
+    /*在2秒钟之后触发一次的定时函数，第三个参数为传递到执行函数中的参数*/
+    setTimeout(function(){
+        console.log(arguments);
+        alert("时间到");
+    } , 2000,[1,2,3,4,5]);
+
+</script>
+</html>
