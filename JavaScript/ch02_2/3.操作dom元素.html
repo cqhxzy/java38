@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">wrap</div>
+</body>
+<script>
+    //根据id选择器获取id为wrap的标签，返回dom对象
+    var div_obj = document.querySelector("#wrap");
+    //console.log(div_obj)
+
+    //获取dom元素的文本
+    var text = div_obj.innerText;
+    console.log("div_obj的文本：",text);
+
+    //为dom元素设置文本
+    div_obj.innerText = "<span>hello javaScript</span>";
+
+    //获取dom元素的html
+    var html = div_obj.innerHTML;
+    console.log("div_obj的html：",html);
+
+    //为dom元素设置文本，并解析文本中的html标签
+    //div_obj.innerHTML = "<span>hello java</span>";
+</script>
+</html>

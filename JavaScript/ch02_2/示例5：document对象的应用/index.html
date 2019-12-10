@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>使用document对象操作页面</title>
+    <style type="text/css">
+      body,
+      input,
+      div,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 14px;
+        font-family: "微软雅黑";
+        line-height: 25px;
+      }
+      .content {
+        width: 550px;
+        margin: 0 auto;
+      }
+      .content img {
+        float: left;
+        width: 150px;
+      }
+      .r {
+        float: left;
+        width: 400px;
+      }
+      input[name="changeBook"] {
+        width: 100px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        margin: 10px 0 10px 0;
+      }
+      input[name="season"] {
+        width: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <img src="images/book.jpg" alt="岛上书店" />
+      <div class="r">
+        <div id="book">书名：岛上书店</div>
+        <input
+          name="changeBook"
+          value="换换名称"
+          type="button"
+          onclick="changeText();"
+        /><br />
+        四季名称：
+        <input name="season" type="text" value="春" />
+        <input name="season" type="text" value="夏" />
+        <input name="season" type="text" value="秋" />
+        <input name="season" type="text" value="冬" /><br /><br />
+        <input
+          name="b2"
+          type="button"
+          value="input内容"
+          onclick="all_input()"
+        />
+        <input name="b3" type="button" value="四季名称" onclick="s_input()" />
+        <input
+          name="b4"
+          type="button"
+          value="清空页面内容"
+          onclick="clearAll()"
+        />
+        <p id="replace"></p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function alterBook() {
+        var i = 0;
+
+        //根据id获取book的div标签
+        var book = document.querySelector("#book");
+        //修改div标签的文本
+        var str = "现象级畅销书";
+
+        return function() {
+          book.innerHTML = str + ++i;
+        };
+      }
+      //多次调用changeText,共享一个词法空间
+      var changeText = alterBook();
+
+      function all_input() {
+        //根据标签名获取所有的input
+        var all_inputs = document.querySelectorAll("input");
+        //console.log(all_inputs);
+
+        var str = "";
+        //迭代器，每个item就是数组中的元素
+        for (const item of all_inputs) {
+            //console.log(item)
+            //获取表单元素的值使用value属性
+            //console.log(item.value);
+            str += item.value + "&nbsp;&nbsp;&nbsp;"
+        }
+
+        //console.log(str)
+        //将字符串添加到id为replace的p标签中
+        document.querySelector("#replace").innerHTML = str;
+
+        //普通的for循环
+        // for (let i = 0; i < all_inputs.length; i++) {
+        //     const element = all_inputs[i];
+        //     console.log(element);
+        // }
+
+        //能够遍历数组，也能够遍历对象
+        // for (const key in all_inputs) {
+        //     //判断key是否为all_inputs本身具备的属性
+        //     if (all_inputs.hasOwnProperty(key)) {
+        //         //当前的all_inputs为数组，因此key为数组的下标
+        //         const element = all_inputs[key];
+        //         console.log(element);
+        //     }
+        // }
+        
+      }
+
+      function s_input(){
+          var seasons = document.querySelectorAll("[name='season']");
+          //console.log(seasons);
+
+            var str = "";
+          for (const item of seasons) {
+              str += item.value + "&nbsp;&nbsp;";
+          }
+
+          document.querySelector("#replace").innerHTML = str;
+      }
+
+      function clearAll(){
+        var seasons = document.querySelectorAll("[name='season']");
+          //console.log(seasons);
+
+          for (const item of seasons) {
+              item.value = "";
+          }
+
+          var replace = document.querySelector("#replace");
+          replace.innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
