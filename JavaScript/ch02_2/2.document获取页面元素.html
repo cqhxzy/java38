@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //根据id获取元素
+    document.getElementById("btn").onclick = function(){
+        alert("你点击了button按钮");
+    }
+
+    //根据name属性获取标签对象，返回数组
+    var arr = document.getElementsByName("ch"); 
+    console.log("name为ch的数组：",arr)
+
+    //根据标签名获取所有的input标签
+    var allInputs = document.getElementsByTagName("input");
+    console.log("页面中所有的input标签：",allInputs);
+
+    //根据选择器获取一个元素
+    var one_ch = document.querySelector("input[name='ch']");
+    console.log("通过querySelector获取的元素：",one_ch);
+
+    //根据选择器获取所有的匹配元素
+    var all_ch = document.querySelectorAll("input[name='ch']");
+    console.log("通过选择器获取所有的元素：",all_ch)
+
+    /*通过选择器获取页面标签对象，会更灵活的获取页面元素*/
+    document.querySelector("#btn");
+    document.querySelector(".hidden");
+    var div = document.querySelector("h1+div");
+    console.log(div);
+    </script>
+</head>
+<body>
+        <h1>标题1</h1>
+        <div>
+            <input type="checkbox" name="ch" value="1"> java
+            <input type="checkbox" name="ch" value="2"> php
+            <input type="checkbox" name="ch" value="3"> asp
+            <input type="checkbox" name="ch" value="4"> vue
+        </div>
+        <input type="hidden" value="hhhh" class="hidden">
+        <input type="button" id="btn" value="关闭浏览器" />
+    
+</body>
+</html>
