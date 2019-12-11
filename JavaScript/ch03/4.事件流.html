@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-color: burlywood;
+      }
+    </style>
+    <script>
+      window.onload = function() {
+        /*事件冒泡*/
+        // document.querySelector("button").onclick = function(){
+        //     console.log(arguments);
+        //     console.log("button按钮被点击了");
+        // }
+
+        // document.body.onclick = function(){
+        //     console.log(arguments);
+        //     console.log("body被点击了");
+        // }
+
+        // document.querySelector("div").onclick=function(){
+        //     console.log("div标签被点击了");
+        // }
+        // document.documentElement.onclick=function(){
+
+        //     console.log("html标签被点击了");
+        // }
+
+        /*事件捕获*/
+        //true: 捕获阶段
+        //false：冒泡阶段
+        document.querySelector("button").addEventListener(
+          "click",
+          function(event) {
+            console.log("button按钮被点击了");
+          },
+          true
+        );
+
+        document.querySelector("div").addEventListener(
+          "click",
+          function(event) {
+            console.log("div标签被点击了");
+          },
+          true
+        );
+
+        document.body.addEventListener("click",function(){
+            console.log("body被点击了");
+        },true);
+
+        document.documentElement.addEventListener("click",function(){
+            console.log("html标签被点击了");
+        },true);
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <button>按钮</button>
+    </div>
+  </body>
+</html>

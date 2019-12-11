@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            display: inline-block;
+            width: 80px;
+            line-height: 50px;
+            color: crimson;
+            border: 1px solid crimson;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 0px 3px #000;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">超链接</a>
+
+    <!--阻止a标签跳转-->
+    <a href="javascript:void(0)">超链接</a>
+    <a href="https://www.baidu.com">超链接</a>
+    <script>
+
+        //弹框后跳转
+        document.querySelectorAll("a")[0].onclick = function(){
+
+            alert("你点击了a标签");
+
+        }
+
+        //修改了a标签的href属性
+        document.querySelectorAll("a")[1].onclick = function(){
+
+            alert("你点击了a标签");
+
+        }
+
+        document.querySelectorAll("a")[2].onclick = function(event){
+            //阻止元素的默认行为
+            event.preventDefault();
+            alert("你点击了a标签");
+
+        }
+
+
+    </script>
+
+    <form action="#" id="f1">
+        <div>
+            用户名<input type="text" name="userName">
+        </div>
+        <div>
+            密码：<input type="password" name="userPwd">
+        </div>
+        <div>
+            <button>登录</button>
+        </div>
+    </form>
+
+    <script>
+        //此时表单的提交是一种同步行为，
+        //会将整个页面都提交
+        //在以后的工作中，大多数情况使用的异步提交表单
+        //异步提交表单需要使用到ajax
+        //原生的JavaScript的异步通过XMLHttpRequest对象实现
+        document.querySelector("#f1").onsubmit=function(event){
+            //使用异步提交表单时，通常需要阻止表单的默认行为
+            event.preventDefault();
+            alert("触发表单提交");
+
+            //异步提交的逻辑...
+            /*
+            
+                $.ajax({
+                    url:'服务器地址',
+                    data:传递到服务器的数据
+                    success:function(response){
+                        if(response.hasError){
+                            alert("用户名或密码错误");
+                        } else {
+                            alert("登录成功");
+                        }
+                    }
+
+                });
+            */
+        }
+    </script>
+</body>
+</html>
