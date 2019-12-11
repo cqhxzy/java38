@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //1.在dom元素之上通过onXXX的事件委托绑定事件
+        function fn_test1(){
+            alert("你点击了按钮1");
+        }
+
+        window.onload = function(){
+            var btn = document.querySelector("#btn2");
+            btn.onclick=function(){
+                alert("你点击了按钮2");
+            }
+
+            var btn3 = document.querySelector("#btn3");
+            //添加事件监听器
+            //参数
+            //1.事件类型，事件名称
+            //2.触发事件时的函数
+            //3.事件流的方式，布尔值
+            btn3.addEventListener("click",function(){
+                alert("你点击了按钮3");
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fn_test1()">按钮1</button>
+    <button id="btn2">按钮2</button>
+    <button id="btn3">按钮3</button>
+
+    
+</body>
+</html>
