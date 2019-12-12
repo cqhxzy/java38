@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+        $(function(){
+
+            //js中通过innerText和innerHTML可以获取dom元素的文本及标签对应的文本
+            var text = $("div").text();
+            console.log(text);
+            
+            $("div").text("aaaaaa")
+
+            var html = $("div").html();
+            console.log(html);
+            $("div").html("<span style='color:red'>bbbb</span")
+
+        });
+    </script>
+</head>
+<body>
+    <div>div1</div>
+</body>
+</html>
