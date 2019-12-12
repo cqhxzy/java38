@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+        $(function(){
+
+
+            setTimeout(function(){
+                //$("div").show();
+                // $("div").show(2000);
+                //$("div").show("fast");
+                $("div").show("slow",function(){ //显示完成后触发的函数
+                    console.log("div显示完成了");
+                    
+                });
+
+                setTimeout(function(){
+                    //$("div").hide();
+                    //$("div").hide(500);
+                    //$("div").hide('fast');
+                    $("div").hide('slow',function(){
+                        console.log("div隐藏了");
+                    });
+                },2000);
+            },2000);
+
+            $("button").click(function(){
+                //$("div").toggle();
+                //$("div").toggle(500);
+                $("div").toggle(500,function(){
+                    console.log("div切换完成");
+                });
+            });
+        });
+    </script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <button>显示/隐藏</button>
+</body>
+</html>

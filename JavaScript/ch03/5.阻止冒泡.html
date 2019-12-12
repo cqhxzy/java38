@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+
+            //true: 捕获阶段
+        //false：冒泡阶段
+        document.querySelector("button").addEventListener(
+          "click",
+          function(event) {
+            event.stopPropagation();//阻止事件冒泡的传递
+            console.log("button按钮被点击了");
+          },
+          false
+        );
+
+        document.querySelector("div").addEventListener(
+          "click",
+          function(event) {
+            console.log("div标签被点击了");
+          },
+          false
+        );
+        }
+    </script>
+</head>
+<body>
+        <div>
+                <button>按钮</button>
+              </div>
+</body>
+</html>

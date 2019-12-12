@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery3.4.1.js"></script>
+
+    <script>
+        $(function(){
+
+            //根据id获取页面的div标签,得到的是dom的对象
+            var div_1 = document.getElementById("div1");
+
+            var div_2 = document.querySelector("#div1");
+
+            //通过jquery获取id为div1 的标签对象，但是返回的jquery对象
+            var jquery_div1 = $("#div1");
+            var jquery_div2 = jQuery("#div1");
+
+            // console.log(div_1);
+            // console.log(div_2);
+            // console.log(jquery_div1);
+            // console.log(jquery_div2);
+            
+            var arrDiv = $("div");
+            console.log(arrDiv)
+
+            //匹配div标签选择器匹配的所有标签中的第一个
+            console.log($("div:first"));
+            //匹配div标签选择器匹配的所有标签中的最后一个
+            console.log($("div:last"));
+            //下标的偶数个
+            console.log($("div:even"));
+            //下标奇数个
+            console.log($("div:odd"));
+            //匹配下标为4的div
+            console.log($("div:eq(4)"));
+            //下标大于2的div
+            console.log($("div:gt(2)"));
+            //下标小于2的div
+            console.log($("div:lt(2)"));
+            //匹配div的子级元素包含指定选择器的div标签
+            console.log($("div:has('.aaa')"));
+            console.log($("div:not('.ddd')"));
+            
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div>div2</div>
+    <div class="ddd">
+        <span class="aaa">div3</span>
+    </div>
+    <div>div4</div>
+    <div>div5</div>
+</body>
+</html>

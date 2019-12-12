@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+        $(function(){
+
+            var val = $(":text").val(); //获取jquery对象中表单元素的value值'
+            console.log(val);
+            
+            $(":text").val("zhangsan")
+
+            $(":radio"); //得到所有的单选框
+            $(":radio:checked");//得到被选中的单选框
+            var isChecked = $(":radio:first").prop("checked"); //返回当前的单选框是否被选中
+            console.log(isChecked);
+            //设置第二个radio被选中
+            $(":radio:eq(1)").prop("checked",true);
+             
+
+            $("button:first").click(function(){
+                var radio = $("#radio");
+                if(!radio.hasClass("red")){ //判断标签是否有red的类选择器
+
+                    $("#radio").addClass("red");//添加类选择器
+
+                } else {
+                    $("#radio").removeClass("red");//移除类选择器
+                }
+                
+            });
+            $("#clear").click(function(){
+                //$("#radio").empty();
+                $("#radio").html("");
+            });
+        });
+    </script>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            文本框：<input type="text" value="admin" >
+    </div>
+    <div id="radio">
+        <label>
+            <input type="radio" name="r" value="男">男
+            <input type="radio" name="r" value="女">女
+        </label>
+    </div>
+    <button>单击添加样式</button>
+    <button id="clear">清空radio</button>
+</body>
+</html>

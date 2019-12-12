@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div,span,p{
+            width: 140px;
+            height: 140px;
+            margin: 5px;
+            background:#aaa;
+            border: #000 1px solid;
+            float: left;
+            font-size: 17px;
+            font-family: Verdana;
+        }
+        div.mini{
+            width: 55px;
+            height: 55px;
+            background-color: #aaa;
+            font-size: 12px;
+
+        }
+        div.hide{
+            display: none;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+        $(function(){
+            //在jquery中为元素绑定事件必须写到ready()以内
+            $("#btn1").click(function(){
+                
+                $("div:first").css("background-color","#bbffaa")
+            })
+
+            $("#clear").click(function(){
+                clear();
+            });
+
+            $("#btn2").click(function(){
+                clear();
+                $("div:empty").css("background-color","#bbffaa");
+            });
+            
+            function clear(){
+                //移除选择器匹配的所有标签的style属性
+                $("div").removeAttr("style");
+            }
+        });
+    </script>
+</head>
+<body>
+    <section class="container clearfix">
+            <div class="one" id="one">
+                    id为one，class为one的div
+                    <div class="mini">class为mini</div>
+                </div>
+                <div class="one" id="two" title="test">
+                    id为two，class为one，title为test的div。
+                    <div class="mini" title="other">class为mini,title为other</div>
+                    <div class="mini" title="test">class为mini,title为test</div>
+                </div>
+                <div class="one">
+                        <div class="mini">class为mini</div>
+                        <div class="mini">class为mini</div>
+                        <div class="mini">class为mini</div>
+                        <div class="mini"></div>
+                </div>
+                <div class="one">
+                        <div class="mini">class为mini</div>
+                        <div class="mini">class为mini</div>
+                        <div class="mini">class为mini</div>
+                        <div class="mini" title="tesst">class为mini,title为tesst</div>
+                </div>
+                <div style="display: none;" class="none">
+                    style的display为“none”的div
+                </div>
+                <div class="hide">class为“hide”的div</div>
+                <div>
+                    包含input的type为“hidden”的div
+                    <input type="hidden" size="8">
+            
+                </div>
+                <span id="mover">正在执行动画的span元素</span>
+    </section>
+    <br />
+    <button id="btn1">改变第一个div的背景色</button>
+    <button id="btn2">改变没有文本的div的背景色</button>
+    <button id="clear">移除所有样式</button>
+</body>
+</html>

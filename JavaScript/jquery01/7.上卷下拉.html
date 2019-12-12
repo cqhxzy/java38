@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery3.4.1.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            display: none;
+        }
+    </style>
+    <script>
+        $(function(){
+
+            $("button:first").click(function(){
+                $("div").slideDown(); //下拉，显示出来
+            });
+            $("button:eq(1)").click(function(){
+                //$("div").slideUp(); //上卷
+                //$("div").slideUp('fast'); //上卷
+                //$("div").slideUp('slow'); //上卷
+                $("div").slideUp(1000); //上卷
+            });
+            $("button:last").click(function(){
+                //$("div").slideToggle(); 
+                //$("div").slideToggle('slow'); 
+                $("div").slideToggle('slow',function(){
+                    console.log("切换完成");
+                    
+                }); 
+            });
+        })
+    </script>
+</head>
+<body>
+        <div></div>
+
+        <button>下拉</button>
+        <button>上卷</button>
+        <button>切换</button>
+</body>
+</html>

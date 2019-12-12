@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      /*
+            浏览器加载完整个页面所需资源时触发的事件；
+            html文档，css，js，图片等
+        */
+      window.onload = function() {
+        function dom(selector) {
+          return document.querySelector(selector);
+        }
+        function domAll(selector) {
+          return document.querySelectorAll(selector);
+        }
+
+        dom("#a1").onmouseover = function() {
+          console.log("鼠标悬浮在了a标签之上");
+        };
+        dom("#a1").onmouseout = function() {
+          console.log("鼠标移出a标签");
+        };
+
+        dom("#tt").onfocus = function() {
+          console.log("文本框获取焦点");
+        };
+        dom("#tt").onblur = function() {
+          console.log("文本框失去焦点");
+        };
+        dom("#tt").onchange = function() {
+          console.log("您改变了文本框的内容");
+        };
+
+        var r_arr = domAll("[name='r']");
+        for (const item of r_arr) {
+          item.onchange = function() {
+            console.log("单选框的选项状态发生了改变");
+          };
+        }
+
+        dom("#ssss").onchange = function() {
+          console.log("下拉菜单的选项发生了改变");
+        };
+        /*
+                keyCode:  用户当前敲击键盘的按键
+                    97: a
+                    65: A
+                    0:  48
+                    空格： 32
+                    回车键：13
+            */
+        document.documentElement.addEventListener("keypress", function(event) {
+          //console.log(event);
+          //console.log("你敲了某个按键");
+          if (event.keyCode == 13) {
+            alert("您敲了回车键");
+          }
+        });
+
+        /*
+            onsubmit事件需要返回一个布尔值
+            return true允许表单提交
+            return false 阻止表单提交
+        */
+        dom("#f1").onsubmit=function(){
+            alert("您正在尝试提交表单");
+            return false;
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <h3>鼠标事件</h3>
+    <a href="#" id="a1">超链接</a>
+
+    <form action="#" method="POST" id="f1">
+        <h3>获取焦点/失去焦点</h3>
+        <input type="text" id="tt" />
+    
+        <h3>change事件</h3>
+        <input type="radio" name="r" /> a <input type="radio" name="r" /> b <br />
+        <select name="ssss" id="ssss">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br />
+        <button>提交</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var arr = document.querySelectorAll("[name='book']");
+            for (const item of arr) {
+                item.onchange = function(event){
+                    var t = event.target; //获取触发事件的dom元素
+                    //console.log(t)
+                    var v = t.value;
+                    //console.log(v);
+
+                    /*
+                    var img = document.querySelector("#book");
+                    img.setAttribute("src","images/" + v);
+                    */
+
+                    //在内存中创了img标签
+                    var img = document.createElement("img");
+                    img.setAttribute("src","images/" + v);
+
+                    //console.log(img);
+                    var wrap = document.querySelector("#wrap");
+                    
+                    //console.log(wrap.children); //只会获取dom子元素
+                    //console.log(wrap.childNodes); //获取元素中包括文本，注释，子元素的所有对象
+                    var children = wrap.children;
+                    for (const item of children) {
+                        //删除item，父级删子级
+                        wrap.removeChild(item);
+                    }
+
+                    wrap.appendChild(img);
+                    
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    请选择你喜欢的数：
+    <input type="radio" name="book" value="dog.jpg"> 我和狗狗一起活下来
+    <input type="radio" name="book" value="mai.jpg"> 灰霾来了怎么办
+    <div id="wrap">
+            <!-- <img id="book"> -->
+    </div>
+    
+</body>
+</html>
