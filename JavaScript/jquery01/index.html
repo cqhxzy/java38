@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--使用jquery的第一步，在网页中导入jquery插件-->
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+        console.log(this)
+        console.log($);
+        /*
+            2.注册jquery
+        */
+
+        //浏览器加载完成后触发的事件
+        window.onload = function(){
+            console.log("浏览器加载完成，触发window.onload事件")
+        }
+
+        //和onload事件等价，jquery提供了两种写法
+        $(document).ready(function(){
+            console.log("浏览器加载完成，触发jquery的ready函数1");
+            
+        });
+
+        $(function(){
+            console.log("浏览器加载完成，触发jquery的ready函数2");
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

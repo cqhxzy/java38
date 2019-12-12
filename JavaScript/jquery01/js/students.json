@@ -1,0 +1,22 @@
+[
+	{
+		"stuNo":1001,
+		"stuName":"zhangsan",
+		"gender":"男"
+	},
+	{
+		"stuNo":1002,
+		"stuName":"lisi",
+		"gender":"女"
+	},
+	{
+		"stuNo":1003,
+		"stuName":"wangwu",
+		"gender":"女"
+	},
+	{
+		"stuNo":1004,
+		"stuName":"zhaoliu",
+		"gender":"男"
+	}
+]

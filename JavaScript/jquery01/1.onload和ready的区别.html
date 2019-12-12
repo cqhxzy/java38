@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+    
+        /*
+            window.onload和$(document).ready()是等价的
+            他们都是在浏览器加载完成后触发的函数。
+
+            window.onload必须等待页面所需的所有资源加载完成后才触发（html,css,js,图像等)
+            ready();在页面加载完成基本的内容后就会触发（html,css,js）
+
+            window.onload在一个页面中只能存在一处，如果有多处，则从代码的编写顺序上，最后一个生效。
+            ready()能够在页面中多次执行
+        */
+       window.onload=function(){
+           console.log("第一次触发window.onload");
+       }
+       
+       window.onload=function(){
+           console.log("第二次触发window.onload");
+       }
+
+       $(function(){
+           console.log("第1次触发ready()");
+           
+       })
+
+       $(function(){
+           console.log("第2次触发ready()");
+           
+       })
+
+       $(function(){
+           console.log("第3次触发ready()");
+           
+       })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

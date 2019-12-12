@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+            margin: 0 auto;
+            min-height: 200px;
+            position: relative;
+        }
+        .wrap .loading{
+            position: absolute;
+            width: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: none;
+        }
+        table,td,th{
+            border: 1px solid #000;
+            border-collapse: collapse; /*合并表格的边框*/
+        }
+        table{
+            width: 500px;
+            max-width: 500px;
+            table-layout: fixed; /*禁止表格宽度随内容增加*/
+            margin: 0 auto;
+        }
+        tr{
+            height: 40px;
+            text-align: center;
+        }
+
+        html,body{
+            height: 100%;
+        }
+    </style>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+    
+        $(function(){
+
+            //通过ajax异步请求数据
+            $.ajax({
+                url:'js/students.json',//请求的服务器地址
+                type:'GET', //请求方式
+                dataType:'json', //服务器返回数据的类型
+                beforeSend:function(){//在发起请求前执行的回调函数
+                    //console.log("准备发起请求");
+                    $(".loading").show();
+                },
+                success:function(resp){//ajax执行成功并得到服务器响应的数据
+                    //console.log("success");
+                    //console.log(resp)
+
+                    $(resp).each(function(index,item){
+                        //console.log($(this));
+                        console.log(item);
+                        
+                        var tr = `<tr>
+                                <td>${item.stuNo}</td>
+                                <td>${item.stuName}</td>
+                                <td>${item.gender}</td>
+                                <td>
+                                    <button>删除</button>    
+                                </td>
+                            </tr>`;
+                        //将tr转换为jquery的对象
+                        var tr_obj = $(tr);
+                        $("tbody").append(tr_obj);
+                    });
+                },
+                error:function(){//ajax在执行中发生错误
+                    console.log("error");
+                    
+                },
+                complete:function(){//ajax执行完触发的回调函数,不管ajax是否执行成功或发生错误，均触发complete
+                    //console.log("complete");
+                    $(".loading").hide();
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+        <div class="loading">加载中，请稍后...</div>
+    </div>
+</body>
+</html>
