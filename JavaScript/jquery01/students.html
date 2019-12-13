@@ -1,108 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <style>
-        .wrap{
-            width: 500px;
-            margin: 0 auto;
-            min-height: 200px;
-            position: relative;
-        }
-        .wrap .loading{
-            position: absolute;
-            width: auto;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            display: none;
-        }
-        table,td,th{
-            border: 1px solid #000;
-            border-collapse: collapse; /*合并表格的边框*/
-        }
-        table{
-            width: 500px;
-            max-width: 500px;
-            table-layout: fixed; /*禁止表格宽度随内容增加*/
-            margin: 0 auto;
-        }
-        tr{
-            height: 40px;
-            text-align: center;
-        }
-
-        html,body{
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/students.css">
     <script src="js/jquery3.4.1.js"></script>
-    <script>
-    
-        $(function(){
-
-            //通过ajax异步请求数据
-            $.ajax({
-                url:'js/students.json',//请求的服务器地址
-                type:'GET', //请求方式
-                dataType:'json', //服务器返回数据的类型
-                beforeSend:function(){//在发起请求前执行的回调函数
-                    //console.log("准备发起请求");
-                    $(".loading").show();
-                },
-                success:function(resp){//ajax执行成功并得到服务器响应的数据
-                    //console.log("success");
-                    //console.log(resp)
-
-                    $(resp).each(function(index,item){
-                        //console.log($(this));
-                        console.log(item);
-                        
-                        var tr = `<tr>
-                                <td>${item.stuNo}</td>
-                                <td>${item.stuName}</td>
-                                <td>${item.gender}</td>
-                                <td>
-                                    <button>删除</button>    
-                                </td>
-                            </tr>`;
-                        //将tr转换为jquery的对象
-                        var tr_obj = $(tr);
-                        $("tbody").append(tr_obj);
-                    });
-                },
-                error:function(){//ajax在执行中发生错误
-                    console.log("error");
-                    
-                },
-                complete:function(){//ajax执行完触发的回调函数,不管ajax是否执行成功或发生错误，均触发complete
-                    //console.log("complete");
-                    $(".loading").hide();
-                }
-            });
-
-        });
-    </script>
-</head>
-<body>
+    <script src="js/students.js"></script>
+  </head>
+  <body>
     <div class="wrap">
-        <table>
-            <thead>
-                <tr>
-                    <th>编号</th>
-                    <th>姓名</th>
-                    <th>性别</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-    
-            </tbody>
-        </table>
-        <div class="loading">加载中，请稍后...</div>
+      <table>
+        <thead>
+          <tr>
+            <th>
+                <label><input type="checkbox" id="chose_all"> 全选</label>
+            </th>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="loading">加载中，请稍后...</div>
+      <div class="button_control">
+          <button class="remove">批量删除</button>
+          <button class="submit" id="btn_add">新增学生</button>
+      </div>
     </div>
-</body>
+    <!--蒙板-->
+    <div class="mask"></div>
+    <!--注册的div-->
+    <div class="register_wrap">
+      <form action="#" >
+        <div class="form_control">
+          <h1>新增学生</h1>
+          <div class="form-item">
+            <div>
+              <label for="stuName">姓名</label>
+            </div>
+            <div>
+              <input type="text" name="stuName" id="stuName" />
+            </div>
+          </div>
+          <div class="form-item">
+            <div>
+              <label for="stuPwd">密码</label>
+            </div>
+            <div>
+              <input type="password" id="stuPwd" name="stuPwd" />
+            </div>
+          </div>
+          <div class="form-item">
+            <div>
+              <label>性别</label>
+            </div>
+            <div>
+              <label><input type="radio" name="gender" value="男" /> 男</label>
+              <label><input type="radio" name="gender" value="女" /> 女</label>
+            </div>
+          </div>
+          <div class="message"></div>
+          <div>
+              <button class="submit">提 交</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
