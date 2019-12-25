@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/commons-beanutils-1.9.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-beanutils-1.9.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
