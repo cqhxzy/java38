@@ -1,4 +1,4 @@
-package com.wisezone.ui;
+package com.wisezone.test;
 
 import com.wisezone.biz.StudentBiz;
 import com.wisezone.biz.impl.StudentBizImpl;
