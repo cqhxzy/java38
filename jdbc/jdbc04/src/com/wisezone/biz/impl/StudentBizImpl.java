@@ -91,4 +91,10 @@ public class StudentBizImpl implements StudentBiz {
         }
         return list;
     }
+
+    @Override
+    public int deleteAllInfo(int stuNo) {
+        int i = studentDao.deleteAllInfo(stuNo);
+        return i;
+    }
 }
