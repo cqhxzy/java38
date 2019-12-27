@@ -1,30 +1,31 @@
 package com.wisezone.dao;
 
-import com.wisezone.entity.Student;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.DruidDataSourceFactory;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.Converter;
 
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 import java.util.*;
 import java.util.Date;
 
 public class JdbcUtil {
-    //驱动类
-    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    //连接数据库的URL地址
-    private static final String URL = "jdbc:mysql://192.168.24.159:3306/myschool?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai";
-    private static final String USER = "root";
-    private static final String PASSWORD = "root";
+
+    private static DataSource dataSource;
+    /**
+     * 维护的实当前线程的局部变量表
+     * 一个用户只有一个线程，在同一个线程中，ThreadLocal相当于是一个针对当前线程的
+     * 全局变量表。只要线程没有终止，ThreadLocal中保存的数据就能够被多次获取。
+     */
+    private ThreadLocal<Connection> threadLocal = new ThreadLocal<>();
+    private boolean isTransaction = false;//默认没开启事务
 
     static {
-        try {
-            Class.forName(DRIVER); //加载并注册驱动类
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
         //注册自定义类，解决日期不能转换的问题
         //数据库查询出的关于日期的类型java.sql.TimeStamp转换为类中需要的java.util.Date
         ConvertUtils.register(new Converter() {
@@ -32,7 +33,7 @@ public class JdbcUtil {
             public  Date convert(Class aClass, Object value) {
                 if (value != null) {
                     //value的类型为java.sql.timestamp
-                    Timestamp db_date = (java.sql.Timestamp)value;
+                    Timestamp db_date = (Timestamp)value;
                     Date date = new Date(db_date.getTime());
                     return date;
                 }
@@ -40,18 +41,18 @@ public class JdbcUtil {
             }
         },Date.class);//因为数据中的日期类型是java.sql.TimeStamp
 
-        ConvertUtils.register(new Converter() {
-            @Override
-            public  Student convert(Class aClass, Object o) {
-                if (o != null) {
-                    Long studentNo = (Long) o;
-                    Student student = new Student();
-                    student.setStudentNo(studentNo.intValue());
-                    return student;
-                }
-                return null;
-            }
-        }, Student.class);
+        //通过工厂产生一个连接池
+        InputStream resourceAsStream = JdbcUtil.class.getResourceAsStream("/jdbc.properties");
+        Properties properties = new Properties();
+        try {
+            properties.load(resourceAsStream);
+            dataSource = DruidDataSourceFactory.createDataSource(properties);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**
@@ -61,8 +62,15 @@ public class JdbcUtil {
      */
     public Connection getConnection() {
         try {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-            return connection;
+            //从本地threadLocal种获取连接
+            Connection connection1 = threadLocal.get();
+            if (connection1 == null) { //第一次获取连接
+                //向连接池请求一个连接
+                Connection connection = dataSource.getConnection();
+                threadLocal.set(connection); //将连接保存到当前的threadLocal
+                return connection;
+            }
+            return connection1;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -84,9 +92,12 @@ public class JdbcUtil {
             if (pstmt != null) {
                 pstmt.close();
             }
-            if (connection != null) {
-                connection.close();
+            if (!isTransaction) { //在开启事务的情况下，不需要关闭连接
+                if (connection != null) {
+                    connection.close();
+                }
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -231,5 +242,63 @@ public class JdbcUtil {
             this.closeAll(connection,pstmt,rs);
         }
         return list;
+    }
+
+    /**
+     * 开启事务
+     */
+    public void startTransaction(){
+        //获取连接
+        Connection connection = getConnection();
+        try {
+            //设置数据库的autocommit为false就可以了
+            connection.setAutoCommit(false);
+            isTransaction = true; //开启事务
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 提交事务
+     */
+    public void commit(){
+        //获取连接
+        Connection connection = getConnection();
+        try {
+            //提交事务
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 回滚事务
+     */
+    public void rollback(){
+        //获取连接
+        Connection connection = getConnection();
+        try {
+            //回滚事务
+            connection.rollback();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 关闭事务操作
+     */
+    public void endTransaction(){
+        //获取连接
+        Connection connection = getConnection();
+        try {
+            connection.setAutoCommit(true);
+            isTransaction = false;//关闭事务
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 }

@@ -69,4 +69,23 @@ public class StudentDaoImpl extends JdbcUtil implements StudentDao {
 
         return super.executeQueryMap(builder.toString());
     }
+
+    @Override
+    public int deleteAllInfo(int stuNo) {
+        //开启事务
+        super.startTransaction();
+        String delete_score_sql = "delete from scores where stuNo = ?";
+        String delete_student_sql = "delete from student where studentno = ?";
+        int i = super.executeUpdate(delete_score_sql, stuNo);//先删成绩
+        int i1 = super.executeUpdate(delete_student_sql, stuNo);//再删学生
+        if (i1 == -1) {
+            super.rollback(); //回滚事务
+        } else {
+            super.commit(); //提交事务
+        }
+
+        //关闭事务
+        super.endTransaction();
+        return i1;
+    }
 }

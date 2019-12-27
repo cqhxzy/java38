@@ -1,4 +1,4 @@
-package com.wisezone.ui;
+package com.wisezone.test;
 
 import com.wisezone.biz.StudentBiz;
 import com.wisezone.biz.impl.StudentBizImpl;
@@ -22,7 +22,9 @@ public class StudentBizTest {
         //queryAll(studentBiz);
 
         //queryNoScore(studentBiz);
-        queryStudentWithScore(studentBiz);
+        //queryStudentWithScore(studentBiz);
+        int i = studentBiz.deleteAllInfo(3);
+        System.out.println(i > 0?"事务执行成功":"事务执行失败");
     }
 
     private static void queryStudentWithScore(StudentBiz studentBiz) {

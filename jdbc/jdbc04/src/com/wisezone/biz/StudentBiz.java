@@ -1,14 +1,11 @@
-package com.wisezone.dao;
+package com.wisezone.biz;
 
 import com.wisezone.entity.Student;
+import com.wisezone.vo.StudentScoreVo;
 
 import java.util.List;
-import java.util.Map;
 
-/**
- * 对学生表做增、删、改、查的接口
- */
-public interface StudentDao extends CommonDao<Student>{
+public interface StudentBiz extends CommonBiz<Student>{
     /**
      * 查询缺考的学生信息
      * @return
@@ -19,5 +16,7 @@ public interface StudentDao extends CommonDao<Student>{
      * 查询有成绩的学生信息
      * @return
      */
-    List<Map<String,Object>> queryStudentWithScore();
+    List<StudentScoreVo> queryStudentWithScore();
+
+    int deleteAllInfo(int stuNo);
 }

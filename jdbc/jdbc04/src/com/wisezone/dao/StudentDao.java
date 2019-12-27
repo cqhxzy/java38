@@ -20,4 +20,6 @@ public interface StudentDao extends CommonDao<Student>{
      * @return
      */
     List<Map<String,Object>> queryStudentWithScore();
+
+    int deleteAllInfo(int stuNo);
 }
