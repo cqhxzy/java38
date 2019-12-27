@@ -17,4 +17,6 @@ public interface StudentBiz extends CommonBiz<Student>{
      * @return
      */
     List<StudentScoreVo> queryStudentWithScore();
+
+    int deleteAllInfo(int stuNo);
 }

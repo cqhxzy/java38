@@ -70,6 +70,7 @@ public class JdbcUtil {
                 threadLocal.set(connection); //将连接保存到当前的threadLocal
                 return connection;
             }
+            return connection1;
         } catch (SQLException e) {
             e.printStackTrace();
         }
