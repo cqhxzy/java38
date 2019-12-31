@@ -5,6 +5,8 @@ import com.alibaba.druid.pool.DruidDataSourceFactory;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.Converter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -15,6 +17,8 @@ import java.util.*;
 import java.util.Date;
 
 public class JdbcUtil {
+
+    private static Logger logger = LoggerFactory.getLogger(JdbcUtil.class);
 
     private static DataSource dataSource;
     /**
@@ -48,8 +52,11 @@ public class JdbcUtil {
             properties.load(resourceAsStream);
             dataSource = DruidDataSourceFactory.createDataSource(properties);
         } catch (IOException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
+
         } catch (Exception e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         }
 
@@ -61,6 +68,7 @@ public class JdbcUtil {
      * @return
      */
     public Connection getConnection() {
+        logger.trace("get connection....");
         try {
             //从本地threadLocal种获取连接
             Connection connection1 = threadLocal.get();
@@ -72,6 +80,7 @@ public class JdbcUtil {
             }
             return connection1;
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         }
         return null;
@@ -99,6 +108,7 @@ public class JdbcUtil {
             }
 
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         }
     }
@@ -112,6 +122,7 @@ public class JdbcUtil {
             pstmt = initPstmt(connection,sql,params);
             return pstmt.executeUpdate();
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         } finally {
             this.closeAll(connection,pstmt,null);
@@ -132,6 +143,7 @@ public class JdbcUtil {
             }
             return pstmt;
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         }
         return null;
@@ -139,13 +151,16 @@ public class JdbcUtil {
 
     //负责执行通用的DQL操作
     public <T> List<T> executeQuery(Class<T> tClass,String sql,Object...params){
+        logger.debug("executeQuery,sql:" + sql + ",params:" + Arrays.toString(params));
         Connection connection = this.getConnection();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         List<T> list = new ArrayList<>();
         try {
+            logger.trace("init preparedStatement");
             pstmt = initPstmt(connection,sql,params);
 
+            logger.trace("begin to executeQuery");
             rs = pstmt.executeQuery();//执行sql语句，得到结果集
 
             /**
@@ -182,12 +197,16 @@ public class JdbcUtil {
             }
 
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         } catch (IllegalAccessException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         } catch (InstantiationException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         } catch (InvocationTargetException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         } finally {
             this.closeAll(connection,pstmt,rs);
@@ -237,6 +256,7 @@ public class JdbcUtil {
             }
 
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         } finally {
             this.closeAll(connection,pstmt,rs);
@@ -255,6 +275,7 @@ public class JdbcUtil {
             connection.setAutoCommit(false);
             isTransaction = true; //开启事务
         } catch (SQLException e) {
+            logger.error(e.getMessage());
             e.printStackTrace();
         }
     }
