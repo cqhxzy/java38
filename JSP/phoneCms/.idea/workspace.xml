@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc87779-659f-405d-bca1-bcfbdc065c05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/vo/DataVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/static/js/jquery-3.4.1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../messageManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../messageManager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../messageManager/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../messageManager/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -285,7 +279,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578541596437" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578550376643" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -448,7 +442,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578360544430</updated>
       <workItem from="1578360547347" duration="7797000" />
-      <workItem from="1578532078036" duration="1823000" />
+      <workItem from="1578532078036" duration="2127000" />
     </task>
     <task id="LOCAL-00001" summary="手机管理系统测试题">
       <created>1578368120169</created>
@@ -469,11 +463,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9620000" />
+    <option name="totallyTimeSpent" value="9924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

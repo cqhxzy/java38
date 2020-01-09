@@ -14,6 +14,7 @@ public class AuthorBizImpl implements AuthorBiz {
     public AuthorVo login(String loginAccount, String loginPwd) {
         //不能把密码也返回给用户查看
         Author login = authorDao.login(loginAccount, loginPwd);
+        if (login == null) return null;
         return new AuthorVo(login.getId(),login.getAuthor(),login.getLoginAccount());
     }
 
