@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration status="ERROR">
+    <!--<Properties>
+        <Property></Property>
+    </Properties>-->
+    <!--<ThresholdFilter/>-->
+
+    <!--设置日志的打印格式-->
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <!--设置日志的格式-->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %l %-5level - %msg%n"  />
+        </Console>
+
+        <!--设置日志文件的路径以及输出到文件中日志的格式-->
+        <File name="FileAppender" fileName="E://logs/app.log" append="true">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS}[%t]%-5level %logger{36} - %msg%n"  />
+        </File>
+
+        <Async name="AsyncAppender">
+            <!--引用文件-->
+            <AppenderRef ref="FileAppender" />
+        </Async>
+
+        <!-- 这个会打印出所有的info及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档-->
+        <RollingFile name="RollingFileInfo"
+                     fileName="E://logs/info.log"
+                     filePattern="E://logs/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <!--文件生成策略-->
+            <Policies>
+
+                <!--结合filePattern中，日志产生的粒度为天-->
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="50 KB"/>
+            </Policies>
+            <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，这里设置了20 -->
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+
+        <RollingFile name="RollingFileerror" fileName="E://logs/error.log"
+                     filePattern="E://logs/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <!--文件生成策略-->
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="50 KB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+
+        <!--根日志器，默认级别error-->
+        <!--<Root level="DEBUG">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="AsyncAppender" />
+        </Root>-->
+
+        <!--自定义Logger-->
+        <Logger level="debug" name="myLogger" additivity="false">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="AsyncAppender" />
+            <AppenderRef ref="RollingFileInfo" />
+            <AppenderRef ref="RollingFileerror" />
+        </Logger>
+        <Root level="ERROR">
+            <!--只把日志输出到控制台-->
+            <AppenderRef ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>
