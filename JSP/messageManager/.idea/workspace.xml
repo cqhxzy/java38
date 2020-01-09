@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="messageManager:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf046510-f51a-453b-9bfe-b09a001ef7a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../phoneCms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../phoneCms/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="75" column="93" selection-start-line="75" selection-start-column="93" selection-end-line="75" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/servlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/biz/AuthorBiz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/vo/DataVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+              <folding>
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://MAVEN/com.wisezone:messageManager:1.0-SNAPSHOT">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>MAVEN</ID>
+              <OriginalElement>com.wisezone:messageManager:1.0-SNAPSHOT</OriginalElement>
+              <nodes>
+                <node x="798.5" y="280.0">com.wisezone:messageManager:1.0-SNAPSHOT</node>
+                <node x="30.0" y="160.0">junit:junit:jar:4.12</node>
+                <node x="0.0" y="80.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1</node>
+                <node x="15.5" y="0.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1/org.hamcrest:hamcrest:jar:2.1</node>
+                <node x="106.0" y="160.0">javax.servlet:javax.servlet-api:jar:3.1.0</node>
+                <node x="250.99999999999994" y="160.0">javax.servlet.jsp:javax.servlet.jsp-api:jar:2.3.3</node>
+                <node x="582.0" y="160.0">jstl:jstl:jar:1.2</node>
+                <node x="650.0" y="160.0">org.apache.taglibs:taglibs-standard-impl:jar:1.2.5</node>
+                <node x="415.99999999999994" y="160.0">commons-beanutils:commons-beanutils:jar:1.9.3</node>
+                <node x="617.0" y="80.0">commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2</node>
+                <node x="345.37499999999994" y="80.0">commons-beanutils:commons-beanutils:jar:1.9.3/commons-collections:commons-collections:jar:3.2.2</node>
+                <node x="1069.125" y="160.0">com.alibaba:druid:jar:1.1.9</node>
+                <node x="1163.125" y="160.0">mysql:mysql-connector-java:jar:8.0.18</node>
+                <node x="1185.625" y="80.0">mysql:mysql-connector-java:jar:8.0.18/com.google.protobuf:protobuf-java:jar:3.6.1</node>
+                <node x="1073.625" y="80.0">org.apache.logging.log4j:log4j-core:jar:2.11.1</node>
+                <node x="954.5104166666665" y="0.0">org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1</node>
+                <node x="900.125" y="80.0">org.slf4j:slf4j-api:jar:1.7.25</node>
+                <node x="930.125" y="160.0">org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1</node>
+                <node x="828.0" y="160.0">org.apache.logging.log4j:log4j-jcl:jar:2.11.1</node>
+                <node x="1340.125" y="160.0">com.alibaba:fastjson:jar:1.2.62</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1">
+                  <point x="21.076923076923094" y="-15.0" />
+                  <point x="888.0769230769231" y="220.0" />
+                  <point x="989.625" y="220.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1">
+                  <point x="0.0" y="-15.0" />
+                  <point x="989.625" y="55.0" />
+                  <point x="996.5104166666665" y="55.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1">
+                  <point x="39.66666666666663" y="-15.0" />
+                  <point x="1029.2916666666665" y="135.0" />
+                  <point x="1096.625" y="135.0" />
+                  <point x="-23.0" y="15.0" />
+                </edge>
+                <edge source="org.apache.logging.log4j:log4j-jcl:jar:2.11.1" target="commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2">
+                  <point x="-19.5" y="-15.0" />
+                  <point x="847.5" y="135.0" />
+                  <point x="721.25" y="135.0" />
+                  <point x="34.75" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="jstl:jstl:jar:1.2">
+                  <point x="-21.076923076923094" y="-15.0" />
+                  <point x="845.9230769230769" y="220.0" />
+                  <point x="606.0" y="220.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="commons-beanutils:commons-beanutils:jar:1.9.3" target="commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2">
+                  <point x="36.5" y="-15.0" />
+                  <point x="525.5" y="135.0" />
+                  <point x="651.75" y="135.0" />
+                  <point x="-34.75" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="com.alibaba:druid:jar:1.1.9">
+                  <point x="31.61538461538464" y="-15.0" />
+                  <point x="898.6153846153845" y="230.0" />
+                  <point x="1100.625" y="230.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="javax.servlet.jsp:javax.servlet.jsp-api:jar:2.3.3">
+                  <point x="-42.15384615384619" y="-15.0" />
+                  <point x="824.8461538461538" y="240.0" />
+                  <point x="323.49999999999994" y="240.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="commons-beanutils:commons-beanutils:jar:1.9.3">
+                  <point x="-31.61538461538464" y="-15.0" />
+                  <point x="835.3846153846152" y="230.0" />
+                  <point x="488.99999999999994" y="230.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.taglibs:taglibs-standard-impl:jar:1.2.5">
+                  <point x="-10.538461538461547" y="-15.0" />
+                  <point x="856.4615384615383" y="210.0" />
+                  <point x="729.0" y="210.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1" target="org.slf4j:slf4j-api:jar:1.7.25">
+                  <point x="-39.66666666666663" y="-15.0" />
+                  <point x="949.9583333333333" y="135.0" />
+                  <point x="958.625" y="135.0" />
+                  <point x="19.5" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-core:jar:2.11.1">
+                  <point x="42.15384615384619" y="-15.0" />
+                  <point x="909.1538461538462" y="240.0" />
+                  <point x="1142.625" y="240.0" />
+                  <point x="23.0" y="15.0" />
+                </edge>
+                <edge source="mysql:mysql-connector-java:jar:8.0.18" target="mysql:mysql-connector-java:jar:8.0.18/com.google.protobuf:protobuf-java:jar:3.6.1">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="mysql:mysql-connector-java:jar:8.0.18">
+                  <point x="52.692307692307736" y="-15.0" />
+                  <point x="919.6923076923076" y="250.0" />
+                  <point x="1241.625" y="250.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="javax.servlet:javax.servlet-api:jar:3.1.0">
+                  <point x="-52.69230769230762" y="-15.0" />
+                  <point x="814.3076923076924" y="250.0" />
+                  <point x="168.5" y="250.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.7.25">
+                  <point x="10.538461538461547" y="-15.0" />
+                  <point x="877.5384615384614" y="210.0" />
+                  <point x="919.625" y="210.0" />
+                  <point x="-19.5" y="15.0" />
+                </edge>
+                <edge source="org.apache.logging.log4j:log4j-core:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1119.625" y="55.0" />
+                  <point x="1024.5104166666665" y="55.0" />
+                  <point x="28.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-jcl:jar:2.11.1">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.apache.logging.log4j:log4j-jcl:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1">
+                  <point x="19.5" y="-15.0" />
+                  <point x="886.5" y="135.0" />
+                  <point x="889.625" y="135.0" />
+                  <point x="889.625" y="55.0" />
+                  <point x="968.5104166666665" y="55.0" />
+                  <point x="-28.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.62">
+                  <point x="63.23076923076928" y="-15.0" />
+                  <point x="930.2307692307693" y="260.0" />
+                  <point x="1378.625" y="260.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="commons-beanutils:commons-beanutils:jar:1.9.3" target="commons-beanutils:commons-beanutils:jar:1.9.3/commons-collections:commons-collections:jar:3.2.2">
+                  <point x="-36.5" y="-15.0" />
+                  <point x="452.49999999999994" y="135.0" />
+                  <point x="422.87499999999994" y="135.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1/org.hamcrest:hamcrest:jar:2.1">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+                  <point x="-63.23076923076917" y="-15.0" />
+                  <point x="803.7692307692307" y="260.0" />
+                  <point x="58.0" y="260.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="11.0" y="144.0" />
+              <SelectedNodes>
+                <node>org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1</node>
+              </SelectedNodes>
+              <Categories />
+              <VISIBILITY>All</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/vo/AuthorVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/dao/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/entity/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/entity/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/dao/AuthorDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/dao/impl/AuthorDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/dao/MessageDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/dao/impl/MessageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/vo/AuthorVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/biz/AuthorBiz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/biz/MesaageBiz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/vo/MessageVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/biz/MessageBiz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/util/ConverterUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/biz/impl/MessageBizImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/servlet/IndexServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/jquery-3.4.1.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/vo/DataVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wisezone/servlet/LoginServlet.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/api/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\api\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="443" />
+    <option name="y" value="173" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wisezone" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="messageManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="messageManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578550376783" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wisezone.biz" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\java38\jsp\messageManager\src\main\webapp\WEB-INF" />
+      <recent name="F:\workspace\java38\jsp\messageManager\src\main\java\com\wisezone\dao" />
+      <recent name="F:\workspace\java38\jsp\messageManager\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.15" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/message/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="messageManager:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/message" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_messageManager" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49404" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="messageManager:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf046510-f51a-453b-9bfe-b09a001ef7a8" name="Default Changelist" comment="" />
+      <created>1578532756076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578532756076</updated>
+      <workItem from="1578532759615" duration="10560000" />
+    </task>
+    <task id="LOCAL-00001" summary="留言板">
+      <created>1578536782053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578536782053</updated>
+    </task>
+    <task id="LOCAL-00002" summary="异步登录">
+      <created>1578541668929</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578541668929</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10560000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="留言板" />
+    <MESSAGE value="异步登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="异步登录" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/biz/CommonBiz.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/dao/CommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/dao/impl/AuthorDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/dao/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="139" column="18" lean-forward="true" selection-start-line="139" selection-start-column="18" selection-end-line="139" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/dao/impl/MessageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/entity/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/dao/AuthorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/dao/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/entity/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/biz/MessageBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/util/ConverterUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/biz/impl/MessageBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/vo/MessageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/servlet/IndexServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/vo/AuthorVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/jquery-3.4.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.62/fastjson-1.2.62.jar!/com/alibaba/fastjson/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="e#1632#1633#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/vo/DataVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/biz/AuthorBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="75" column="93" selection-start-line="75" selection-start-column="93" selection-end-line="75" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.wisezone:messageManager:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.wisezone:messageManager:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="798.5" y="280.0">com.wisezone:messageManager:1.0-SNAPSHOT</node>
+            <node x="30.0" y="160.0">junit:junit:jar:4.12</node>
+            <node x="0.0" y="80.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1</node>
+            <node x="15.5" y="0.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1/org.hamcrest:hamcrest:jar:2.1</node>
+            <node x="106.0" y="160.0">javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="250.99999999999994" y="160.0">javax.servlet.jsp:javax.servlet.jsp-api:jar:2.3.3</node>
+            <node x="582.0" y="160.0">jstl:jstl:jar:1.2</node>
+            <node x="650.0" y="160.0">org.apache.taglibs:taglibs-standard-impl:jar:1.2.5</node>
+            <node x="415.99999999999994" y="160.0">commons-beanutils:commons-beanutils:jar:1.9.3</node>
+            <node x="617.0" y="80.0">commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2</node>
+            <node x="345.37499999999994" y="80.0">commons-beanutils:commons-beanutils:jar:1.9.3/commons-collections:commons-collections:jar:3.2.2</node>
+            <node x="1069.125" y="160.0">com.alibaba:druid:jar:1.1.9</node>
+            <node x="1163.125" y="160.0">mysql:mysql-connector-java:jar:8.0.18</node>
+            <node x="1185.625" y="80.0">mysql:mysql-connector-java:jar:8.0.18/com.google.protobuf:protobuf-java:jar:3.6.1</node>
+            <node x="1073.625" y="80.0">org.apache.logging.log4j:log4j-core:jar:2.11.1</node>
+            <node x="954.5104166666665" y="0.0">org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1</node>
+            <node x="900.125" y="80.0">org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="930.125" y="160.0">org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1</node>
+            <node x="828.0" y="160.0">org.apache.logging.log4j:log4j-jcl:jar:2.11.1</node>
+            <node x="1340.125" y="160.0">com.alibaba:fastjson:jar:1.2.62</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1">
+              <point x="21.076923076923094" y="-15.0" />
+              <point x="888.0769230769231" y="220.0" />
+              <point x="989.625" y="220.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1">
+              <point x="0.0" y="-15.0" />
+              <point x="989.625" y="55.0" />
+              <point x="996.5104166666665" y="55.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1">
+              <point x="39.66666666666663" y="-15.0" />
+              <point x="1029.2916666666665" y="135.0" />
+              <point x="1096.625" y="135.0" />
+              <point x="-23.0" y="15.0" />
+            </edge>
+            <edge source="org.apache.logging.log4j:log4j-jcl:jar:2.11.1" target="commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2">
+              <point x="-19.5" y="-15.0" />
+              <point x="847.5" y="135.0" />
+              <point x="721.25" y="135.0" />
+              <point x="34.75" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="jstl:jstl:jar:1.2">
+              <point x="-21.076923076923094" y="-15.0" />
+              <point x="845.9230769230769" y="220.0" />
+              <point x="606.0" y="220.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="commons-beanutils:commons-beanutils:jar:1.9.3" target="commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2">
+              <point x="36.5" y="-15.0" />
+              <point x="525.5" y="135.0" />
+              <point x="651.75" y="135.0" />
+              <point x="-34.75" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="com.alibaba:druid:jar:1.1.9">
+              <point x="31.61538461538464" y="-15.0" />
+              <point x="898.6153846153845" y="230.0" />
+              <point x="1100.625" y="230.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="javax.servlet.jsp:javax.servlet.jsp-api:jar:2.3.3">
+              <point x="-42.15384615384619" y="-15.0" />
+              <point x="824.8461538461538" y="240.0" />
+              <point x="323.49999999999994" y="240.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="commons-beanutils:commons-beanutils:jar:1.9.3">
+              <point x="-31.61538461538464" y="-15.0" />
+              <point x="835.3846153846152" y="230.0" />
+              <point x="488.99999999999994" y="230.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.taglibs:taglibs-standard-impl:jar:1.2.5">
+              <point x="-10.538461538461547" y="-15.0" />
+              <point x="856.4615384615383" y="210.0" />
+              <point x="729.0" y="210.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="-39.66666666666663" y="-15.0" />
+              <point x="949.9583333333333" y="135.0" />
+              <point x="958.625" y="135.0" />
+              <point x="19.5" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-core:jar:2.11.1">
+              <point x="42.15384615384619" y="-15.0" />
+              <point x="909.1538461538462" y="240.0" />
+              <point x="1142.625" y="240.0" />
+              <point x="23.0" y="15.0" />
+            </edge>
+            <edge source="mysql:mysql-connector-java:jar:8.0.18" target="mysql:mysql-connector-java:jar:8.0.18/com.google.protobuf:protobuf-java:jar:3.6.1">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="mysql:mysql-connector-java:jar:8.0.18">
+              <point x="52.692307692307736" y="-15.0" />
+              <point x="919.6923076923076" y="250.0" />
+              <point x="1241.625" y="250.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="javax.servlet:javax.servlet-api:jar:3.1.0">
+              <point x="-52.69230769230762" y="-15.0" />
+              <point x="814.3076923076924" y="250.0" />
+              <point x="168.5" y="250.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="10.538461538461547" y="-15.0" />
+              <point x="877.5384615384614" y="210.0" />
+              <point x="919.625" y="210.0" />
+              <point x="-19.5" y="15.0" />
+            </edge>
+            <edge source="org.apache.logging.log4j:log4j-core:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1">
+              <point x="0.0" y="-15.0" />
+              <point x="1119.625" y="55.0" />
+              <point x="1024.5104166666665" y="55.0" />
+              <point x="28.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-jcl:jar:2.11.1">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.apache.logging.log4j:log4j-jcl:jar:2.11.1" target="org.apache.logging.log4j:log4j-core:jar:2.11.1/org.apache.logging.log4j:log4j-api:jar:2.11.1">
+              <point x="19.5" y="-15.0" />
+              <point x="886.5" y="135.0" />
+              <point x="889.625" y="135.0" />
+              <point x="889.625" y="55.0" />
+              <point x="968.5104166666665" y="55.0" />
+              <point x="-28.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.62">
+              <point x="63.23076923076928" y="-15.0" />
+              <point x="930.2307692307693" y="260.0" />
+              <point x="1378.625" y="260.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="commons-beanutils:commons-beanutils:jar:1.9.3" target="commons-beanutils:commons-beanutils:jar:1.9.3/commons-collections:commons-collections:jar:3.2.2">
+              <point x="-36.5" y="-15.0" />
+              <point x="452.49999999999994" y="135.0" />
+              <point x="422.87499999999994" y="135.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:2.1/org.hamcrest:hamcrest:jar:2.1">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.wisezone:messageManager:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+              <point x="-63.23076923076917" y="-15.0" />
+              <point x="803.7692307692307" y="260.0" />
+              <point x="58.0" y="260.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="11.0" y="144.0" />
+          <SelectedNodes>
+            <node>org.apache.logging.log4j:log4j-slf4j-impl:jar:2.11.1</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wisezone/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>messageManager:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>messageManager</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
