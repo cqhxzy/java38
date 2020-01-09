@@ -68,7 +68,7 @@
             <AppenderRef ref="RollingFileInfo" />
             <AppenderRef ref="RollingFileerror" />
         </Logger>
-        <Root level="ERROR">
+        <Root level="info">
             <!--只把日志输出到控制台-->
             <AppenderRef ref="console" />
         </Root>

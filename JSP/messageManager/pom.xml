@@ -82,6 +82,13 @@
         <artifactId>log4j-jcl</artifactId>
         <version>${log4j-version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.62</version>
+      </dependency>
+
     </dependencies>
 
   </dependencyManagement>
@@ -156,6 +163,11 @@
       <artifactId>log4j-jcl</artifactId>
     </dependency>
 
+    <!--添加fastjson，支持json-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+    </dependency>
   </dependencies>
 
   <build>

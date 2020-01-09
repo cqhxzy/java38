@@ -53,7 +53,12 @@
         <section>
             <nav>
                 <h1>留言板</h1>
-                <a href="#">发表留言</a>
+                <c:if test="${sessionScope.user != null}">
+                    欢迎${sessionScope.user.author}!<a href="#">发表留言</a>
+                </c:if>
+                <c:if test="${sessionScope.user == null}">
+                    <a href="/message/login.jsp">登录</a>
+                </c:if>
             </nav>
             <c:forEach items="${list}" var="m">
                 <article>

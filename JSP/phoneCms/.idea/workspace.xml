@@ -7,36 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc87779-659f-405d-bca1-bcfbdc065c05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../messageManager/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/messageManager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/AuthorBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/CommonBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/MessageBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/impl/AuthorBizImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/biz/impl/MessageBizImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/dao/AuthorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/dao/CommonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/dao/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/dao/MessageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/dao/impl/AuthorDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/dao/impl/MessageDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/entity/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/servlet/IndexServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/util/ConverterUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/vo/AuthorVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/vo/MessageVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phoneCms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/java/com/wisezone/vo/DataVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/static/js/jquery-3.4.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../messageManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../messageManager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../messageManager/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../messageManager/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../messageManager/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="158" column="17" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="158" selection-end-column="17" />
+            <state relative-caret-position="422">
+              <caret line="156" column="17" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="158" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -217,7 +195,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="443" />
     <option name="y" value="173" />
     <option name="width" value="1382" />
@@ -307,7 +285,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578536765552" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578541596437" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -470,7 +448,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578360544430</updated>
       <workItem from="1578360547347" duration="7797000" />
-      <workItem from="1578532078036" duration="1524000" />
+      <workItem from="1578532078036" duration="1823000" />
     </task>
     <task id="LOCAL-00001" summary="手机管理系统测试题">
       <created>1578368120169</created>
@@ -491,10 +469,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9321000" />
+    <option name="totallyTimeSpent" value="9620000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
@@ -720,8 +698,8 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="158" column="17" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="158" selection-end-column="17" />
+        <state relative-caret-position="422">
+          <caret line="156" column="17" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="158" selection-end-column="17" />
         </state>
       </provider>
     </entry>
