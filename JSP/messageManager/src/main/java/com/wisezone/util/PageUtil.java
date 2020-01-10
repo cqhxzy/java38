@@ -10,7 +10,7 @@ public class PageUtil<T> {
     //默认起始页为1
     public static final int DEFAULT_PAGE_INDEX = 1;
     //默认每页显示5条数据
-    public static final int DEFAULT_PAGE_SIZE = 5;
+    public static final int DEFAULT_PAGE_SIZE = 3;
 
     //当前页码
     private Integer pageIndex = DEFAULT_PAGE_INDEX;
@@ -112,6 +112,7 @@ public class PageUtil<T> {
     }
 
     public int[] getNav(){
+        //得到总页数
         this.totalPages = this.totalPages();
         //当总页数小于或等于导航页码数时
         if (this.totalPages <= navigationCount) {
