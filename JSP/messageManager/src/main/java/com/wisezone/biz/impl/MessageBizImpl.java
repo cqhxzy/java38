@@ -5,6 +5,7 @@ import com.wisezone.dao.MessageDao;
 import com.wisezone.dao.impl.MessageDaoImpl;
 import com.wisezone.entity.Message;
 import com.wisezone.util.ConverterUtil;
+import com.wisezone.util.PageUtil;
 import com.wisezone.vo.MessageVo;
 
 import java.util.List;
@@ -51,4 +52,11 @@ public class MessageBizImpl implements MessageBiz {
             return vo;
         }).collect(Collectors.toList());
     }
+
+    @Override
+    public void page(PageUtil pageUtil) {
+        messageDao.page(pageUtil);
+    }
+
+
 }
