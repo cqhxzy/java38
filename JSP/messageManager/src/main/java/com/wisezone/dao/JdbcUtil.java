@@ -64,6 +64,7 @@ public class JdbcUtil {
             //从本地threadLocal种获取连接
             Connection connection1 = threadLocal.get();
             if (connection1 == null) { //第一次获取连接
+                System.out.println(Thread.currentThread().getName());
                 //向连接池请求一个连接
                 Connection connection = dataSource.getConnection();
                 threadLocal.set(connection); //将连接保存到当前的threadLocal
@@ -297,6 +298,12 @@ public class JdbcUtil {
             isTransaction = false;//关闭事务
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
 
     }
